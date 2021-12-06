@@ -1,6 +1,6 @@
 from PyQt5.QtCore import QDate
 from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import QApplication, QTableWidgetItem, QAbstractItemView, QTableWidget
+from PyQt5.QtWidgets import QTableWidgetItem, QAbstractItemView, QTableWidget
 
 
 class DateTableWidget(QTableWidget):
@@ -23,12 +23,3 @@ class DateTableWidget(QTableWidget):
             self.setRowCount(self.rowCount()+1)
             self.setVerticalHeaderItem(i, item)
             date = date.addDays(1)
-
-
-if __name__ == "__main__":
-    import sys
-
-    app = QApplication(sys.argv)
-    dateTableWidget = DateTableWidget()
-    dateTableWidget.show()
-    app.exec_()
