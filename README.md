@@ -7,6 +7,11 @@ PyQt5 >= 5.8
 ## Setup
 ``` pip3 install git+https://github.com/yjg30737/pyqt-date-table-widget.git --upgrade```
 
+## Feature
+* Available to set date range to show
+* Available to set start date
+* Show different color for weekend
+
 ## Example
 Code Example
 ```python
