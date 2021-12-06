@@ -8,13 +8,14 @@ PyQt5 >= 5.8
 ``` pip3 install git+https://github.com/yjg30737/pyqt-date-table-widget.git --upgrade```
 
 ## Feature
-* Available to set date range to show
-* Available to set start date
+* Available to set date range to show (100 as default)
+* Available to set start date (current date as default)
 * Show different color for weekend
 
 ## Example
 Code Example
 ```python
+from PyQt5.QtCore import QDate
 from PyQt5.QtWidgets import QApplication
 from pyqt_date_table_widget import DateTableWidget
 
@@ -22,7 +23,8 @@ if __name__ == "__main__":
     import sys
 
     app = QApplication(sys.argv)
-    dateTableWidget = DateTableWidget()
+    afterFifteenDaysFromToday = QDate.currentDate().addDays(15)
+    dateTableWidget = DateTableWidget(start_date=afterFifteenDaysFromToday, date_range=1000)
     dateTableWidget.setColumnCount(2)
     dateTableWidget.setHorizontalHeaderLabels(['Literature', 'Mathematics'])
     dateTableWidget.show()
@@ -31,6 +33,7 @@ if __name__ == "__main__":
 
 Result
 
-![image](https://user-images.githubusercontent.com/55078043/144792395-fcfec9e4-e5fc-448b-aef0-33f8073dfa5a.png)
+![image](https://user-images.githubusercontent.com/55078043/144793727-55338cb4-2a88-44f4-afc0-c2a184c95f85.png)
+
 
 
