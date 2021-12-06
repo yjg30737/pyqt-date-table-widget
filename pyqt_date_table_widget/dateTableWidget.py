@@ -28,7 +28,3 @@ class DateTableWidget(QTableWidget):
             self.setRowCount(self.rowCount()+1)
             self.setVerticalHeaderItem(i, item)
             date = date.addDays(1)
-
-    def setDateRange(self, date_range: int):
-        self.__date_range = date_range
-
