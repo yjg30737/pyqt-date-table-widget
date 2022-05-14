@@ -1,5 +1,5 @@
 # pyqt-date-table-widget
-PyQt Date Table Widget
+PyQt table widget for showing date
 
 ## Requirements
 PyQt5 >= 5.8
