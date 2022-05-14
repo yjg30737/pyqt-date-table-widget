@@ -5,7 +5,7 @@ PyQt Date Table Widget
 PyQt5 >= 5.8
 
 ## Setup
-``` pip3 install git+https://github.com/yjg30737/pyqt-date-table-widget.git --upgrade```
+`python -m pip install pyqt-date-table-widget`
 
 ## Feature
 * Available to set date range to show (100 as default)
